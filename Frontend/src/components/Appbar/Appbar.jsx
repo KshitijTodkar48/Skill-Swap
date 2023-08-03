@@ -63,7 +63,7 @@ export const Appbar = () => {
       </div>
       {!currentloginState.user && !currentloginState.admin ? (
         <div className="navitems">
-          <span id="home">Home</span>
+          <span id="home" onClick={()=>{navigate("/")}}>Home</span>
 
           <span id="about" onClick={() => {
             let aboutcart = document.getElementById("aboutUs");

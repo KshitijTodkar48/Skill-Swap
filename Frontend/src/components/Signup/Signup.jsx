@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { TextField, Button } from "@mui/material";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import "./Signup.css";
 import { Appbar } from "../Appbar/Appbar";
 import { Aboutus, Footer } from "../LandingPage/Landing";
@@ -64,6 +64,10 @@ export const Signup = () => {
 
         <div className="btn">
           <Button variant="contained" onClick={() => {handleSignup()}}>Signup</Button>
+          <div>
+             Already have an account ?
+            <Link to="/users/login"> Login</Link>
+          </div>
         </div>
       </div>
     </div>

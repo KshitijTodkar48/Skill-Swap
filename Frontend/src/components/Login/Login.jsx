@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { TextField, Button } from "@mui/material";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import "./Login.css";
 import { Aboutus, Footer } from "../LandingPage/Landing";
 import { Appbar } from "../Appbar/Appbar";
@@ -63,6 +63,10 @@ export const Login = () => {
 
         <div className="btn">
           <Button variant="contained" onClick={() => {handleLogin()}}>Login</Button>
+          <div>
+            Don't have an account ?
+            <Link to="/users/signup"> Signup</Link>
+          </div>
         </div>
       </div>
     </div>
