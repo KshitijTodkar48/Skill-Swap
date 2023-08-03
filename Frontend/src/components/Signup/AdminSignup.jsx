@@ -17,7 +17,7 @@ export const AdminSignup = () => {
       alert("Please enter both the fields.");
       return;
     }
-    fetch(`http://localhost:3000/users/signup` , {
+    fetch(`http://localhost:3000/admin/signup` , {
       method: "POST",
       headers:{
         "Content-Type": "application/json"
@@ -29,8 +29,12 @@ export const AdminSignup = () => {
     }).then( res => {
       return res.json();
     }).then( data => {
-      localStorage.setItem("admintoken",data.token);
-      navigate(`/users/courses`);
+      alert(data.message);
+      if(data.token)
+      {
+        localStorage.setItem("admintoken",data.token);
+        navigate(`/admin/courses`);
+      }
     })
   }
 

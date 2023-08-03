@@ -29,8 +29,12 @@ export const Signup = () => {
     }).then( res => {
       return res.json();
     }).then( data => {
-      localStorage.setItem("usertoken",data.token);
-      navigate(`/users/courses`);
+      alert(data.message);
+      if(data.token)
+      {
+        localStorage.setItem("usertoken",data.token);
+        navigate(`/users/courses`);
+      }
     })
   }
 

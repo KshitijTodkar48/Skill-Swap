@@ -28,8 +28,12 @@ export const AdminLogin = () => {
     }).then( res => {
       return res.json();
     }).then( data => {
-      localStorage.setItem("admintoken",data.token);
-      navigate(`/admin/courses`);
+      alert(data.message);
+      if(data.token)
+      {
+        localStorage.setItem("admintoken",data.token);
+        navigate(`/admin/courses`);
+      }
     })
   }
 
