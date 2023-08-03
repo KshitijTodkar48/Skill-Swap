@@ -1,0 +1,63 @@
+.appbar{
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.left{
+    width: 25%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.name{
+    font-size: 45px;
+    font-family: "Lobster";
+    color: white;
+    padding: 2px 15px;
+}
+
+.navitems{
+    width: 75%;
+    display: flex;
+    font-size: 30px;
+    font-family: "Mukta";
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navitems > span{
+    margin-bottom: 1px;
+}
+
+.navitems > span:hover{
+    cursor: pointer;
+    border-bottom: 2px solid white;
+    margin-bottom: 0px;
+}
+
+.right{
+    width: 75%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.user{
+    color: white;
+    font-family: "Rubik";
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    margin-right: 8px;
+}
+
+.navbtn{
+    margin: 0px 10px;
+}

@@ -1,0 +1,27 @@
+h1{
+    margin: 5px;
+    text-align: center;
+    font-family: "Mukta";
+}
+
+.createCourse{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 100%;
+}
+.createCoursecard{
+    height: 66%;
+    width: 30%;
+    border: 1px solid rgb(206, 205, 205);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.btn{
+    margin: 20px 0;
+}

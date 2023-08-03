@@ -1,0 +1,61 @@
+.courses{
+    display: flex;
+    font-family: "Rubik";
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.courseCard{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgb(206, 205, 205);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.title{
+    width: 320px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.description{
+    font-size: 18px;
+    margin: 2px;
+    width: 300px;
+    color: rgb(108, 106, 106);
+}
+
+.price{
+    text-align: center;
+    font-size: 21px;
+    margin: 10px 5px 5px 5px;
+}
+
+.button{
+    width: 70%;
+    margin-top: 5px;
+    border: none;
+    font-size: 20px;
+    background-color: brown;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: rgb(130, 24, 24);
+}
+
+.image > img{
+    height: 250px;
+    width: 300px;
+    border-radius: 15px;
+}

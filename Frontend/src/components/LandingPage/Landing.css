@@ -1,0 +1,153 @@
+.first{
+    background-image:linear-gradient(rgba(10, 40, 91, 0.7),rgba(50, 112, 220, 0.7)),url(./images/image-2.jpeg);
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+}
+
+.heading > div > span {
+    font-size: 85px;
+    margin: 2px;
+}
+
+.heading > h2 {
+    font-size: 30px;
+    font-family: "Inter";
+    font-weight: 550;
+    margin: 10px;
+}
+
+#startbtn{
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   background-color: rgb(18, 52, 124);
+   color: white;
+   font-size: 25px;
+   padding: 10px 25px;
+   border: 1px solid white;
+   border-radius: 20px;
+   margin-top: 30px;
+}
+
+#startbtn:hover{
+    cursor: pointer;
+    background-color: rgb(72, 92, 138);
+}
+
+.second{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftsecond{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.leftsecond > img{
+    width: 85%;
+    border-radius: 20px;
+}
+
+.rightsecond{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rightsecond > span {
+    font-size: 33px;
+    font-weight: 550;
+}
+
+.rightsecond > p {
+    font-size: 20px;
+    color: rgb(50, 50, 50);
+    line-height: 1.4;
+}
+
+.footer{
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+}
+
+.leftfooter, .rightfooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.leftfooter > div, .rightfooter > div{
+    font-size: 33px;
+    margin: 15px;
+    padding: 5px 0px;
+    border-bottom: 4px solid rgb(26, 113, 206);
+}
+
+.rightfooter > div{
+    width: 50%;
+}
+
+.leftfooter > span, .rightfooter > span{
+    font-family: "Mukta";
+    font-size: 22px;
+    margin: 0px 15px;
+    cursor: pointer;
+}
+
+.credits{
+    height: 6vh;
+    background-color: black;
+    color: rgb(189, 187, 187);
+    font-size: 28px;
+    font-weight: 550;
+    font-family: "Mukta";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright{
+    height: 10vh;
+    background-color: black;
+    color: rgb(189, 187, 187);
+    font-size: 20px;
+    font-weight: 550;
+    font-family: "Mukta";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright > span {
+    margin: 2px;
+}
