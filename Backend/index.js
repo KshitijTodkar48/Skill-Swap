@@ -10,8 +10,8 @@ const PORT = 3000;
 app.use(cors());
 app.use(express.json());
 
-const adminSecret = "secret$@ad1%^&min*$" ;
-const userSecret = "secret$@us1%^&er*$" ;
+const adminSecret = process.env.ADMIN_SECRET ;
+const userSecret = process.env.USER_SECRET ;
 
 const generateJwtAdmin = (admin) => {
   const payload = { username: admin.username, role: "admin" } ; 
